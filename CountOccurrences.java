@@ -6,9 +6,9 @@ public class CountOccurrences {
   public static long countOccurrences(List<String> list, String target) {
 
     return  list.stream()
-    .map(String::toLowerCase)
-    .filter(e -> e.equals(target))
-    .count();
+      .map(String::toLowerCase)
+      .filter(e -> e.equals(target))
+      .count();
   }
 
   public static void main(String[] args) {  
