@@ -7,7 +7,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">Spring boot with Resilience4j</h3>
+  <h3 align="center">Java Challenges</h3>
 
 </div>
 
@@ -62,11 +62,6 @@ Exercise sets to reinforce basic concepts using java. Just to relax and remember
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-
-* CheckChar [service concurrently](https://github.com/pedrop3/practices-basic/blob/main/CheckChar.java).
-* CountOccurrences [service concurrently](https://github.com/pedrop3/practices-basic/blob/main/CountOccurrences.java).
-* RemoveDuplicates [service concurrently](https://github.com/pedrop3/practices-basic/blob/main/RemoveDuplicates.java).
-* MaxValue [service concurrently](https://github.com/pedrop3/practices-basic/blob/main/MaxValue.java).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
