@@ -22,7 +22,7 @@ public class MaxValue {
   }
 
   public static void main(String[] args) {  
-      int[] arr = {5, 8, 2, 10, 55 ,3};
+      int[] arr = {5, 8, 2, 10, 55,50, 888,3};
       int maxElement = findMaxElementsByStream(arr);
 
       System.out.println("MaxElement is " + maxElement);

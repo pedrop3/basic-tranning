@@ -13,7 +13,7 @@ public class ArrayIntegers {
 
   public static void main(String[] argh) {
     Integer[] input = { 1, 2, 3, 4, 5 };
-    Integer[] input2 = { 17,19,21 };
+    Integer[] input2 = { 17, 19, 21 };
 
     ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(input2));
 
@@ -28,10 +28,9 @@ public class ArrayIntegers {
       return points;
     }
 
-
     for (int number : arrayList) {
       if (number % 2 != 0) {
-        
+
         if (number == 5) {
           points += 5;
         } else {
