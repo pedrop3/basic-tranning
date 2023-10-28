@@ -1,3 +1,4 @@
+package Strings;
 /**
  * 
  * You are developing a data cleaning tool. You receive a list of text data, but

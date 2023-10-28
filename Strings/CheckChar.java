@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package Strings;
 import java.util.stream.IntStream;
 
 public class CheckChar {

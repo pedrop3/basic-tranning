@@ -1,3 +1,4 @@
+package Strings;
 import java.security.Permission;
 import java.util.Scanner;
 
