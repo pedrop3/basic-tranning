@@ -3,7 +3,6 @@ package HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class NamesByOrder {
@@ -17,11 +16,19 @@ public class NamesByOrder {
         names.put("Ana Luiza", 22);
         names.put("Felipe", 34);
 
-        Set<Map.Entry<String, Integer>> orderNames = names.entrySet()
+        var orderList = names
+                .entrySet()
                 .stream()
-                .sorted(Map.Entry.comparingByKey())
-                .collect(Collectors.toSet());
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toList());
 
-        System.out.println(orderNames);
+        var orderList2 = names
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .collect(Collectors.toList());
+
+        System.out.println(orderList);
+        System.out.println(orderList2);
     }
 }
