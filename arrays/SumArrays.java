@@ -18,6 +18,7 @@ public class SumArrays {
     
 
        public static int simpleArraySum(List<Integer> ar) {
+        var check = ar.contains(100);
 
         return ar.stream().reduce(Integer::sum).orElseThrow();
 

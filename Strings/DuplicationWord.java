@@ -30,9 +30,6 @@ public class DuplicationWord {
 
     public static void regex(List<String> wordList) {
 
-        // var list =
-        // wordList.stream().map(String::toLowerCase).distinct().collect(Collectors.toList());
-
         for (String word : wordList) {
             String pattern = "\\b(\\w+)(\\b\\W+\\1\\b)*";
             Pattern r = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
