@@ -88,6 +88,11 @@ public class InsertNode {
         }
 
         public void add(int value, int position) {
+            if (position < 0) {
+                throw new IndexOutOfBoundsException("Position is out of bounds.");
+            }
+        
+            
             SinglyLinkedListNode newNode = new SinglyLinkedListNode(value);
 
             SinglyLinkedListNode current = this.head;
@@ -103,7 +108,9 @@ public class InsertNode {
                 i++;
             }
 
-            if (i == 0) {
+            boolean isHead = i == 0;
+            
+            if (isHead) {
                 this.head = newNode;
                 this.head.next = current;
             } else {
