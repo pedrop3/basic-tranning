@@ -17,7 +17,6 @@ public class ControlCommad {
     }
 
     public void executeCommand() {
-        ReentrantReadWriteLock 
         commands.forEach(command -> {
             try {
 
