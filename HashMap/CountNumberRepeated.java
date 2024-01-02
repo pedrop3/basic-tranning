@@ -12,7 +12,6 @@ public class CountNumberRepeated {
   public static Map<Integer, Integer> countNumbers(List<Integer> list) {
     Map<Integer, Integer> countNumberList = new HashMap<>();
 
-    int count = 0;
     list.forEach(number -> {
       if (!countNumberList.containsKey(number)) {
         countNumberList.put(number, 1);
@@ -23,13 +22,24 @@ public class CountNumberRepeated {
     });
 
     return countNumberList;
+  }
+
+  public static Map<Integer, Integer> refector(List<Integer> list) {
+    Map<Integer, Integer> countNumberList = new HashMap<>();
+
+    list.forEach(number -> 
+        countNumberList.compute(number, (key, value) -> (value == null) ? 1 : value + 1));
+
+    return countNumberList;
 
   }
 
   public static void main(String[] args) {
-    ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1, 2, 3, 2, 4, 5, 4, 6, 6 ,6));
+    List<Integer> arrayList = Arrays.asList(1, 2, 3, 2, 4, 5, 4, 6, 6, 6);
 
-    System.out.println("Old List: " + arrayList);
-    System.out.println("New List: " + countNumbers(arrayList));
+    System.out.println("Old List:              " + arrayList);
+    System.out.println("New List:              " + countNumbers(arrayList));
+    System.out.println("New List with  compute " + countNumbers(arrayList));
+
   }
 }

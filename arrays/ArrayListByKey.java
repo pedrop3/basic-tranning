@@ -52,6 +52,9 @@ public class ArrayListByKey {
         // System.out.println("Quantidade de linhas");
         int totalLine = scanner.nextInt();
 
+        if (true) {
+            throw new NumberFormatException();
+        }
         ArrayList<ArrayList<Integer>> lines = new ArrayList<>();
 
         for (int i = 0; i < totalLine; i++) {
