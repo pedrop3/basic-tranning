@@ -57,7 +57,8 @@ import java.util.Scanner;
  * 
  * 0 1 78 12 23
  */
-public class JavaList {
+
+public class FactoryStrategy {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
