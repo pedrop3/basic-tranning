@@ -6,17 +6,16 @@ public class Polidromo {
 
         String phase = "A man, a plan, a canal – Panama";
 
-        String phaseClear = phase.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        String clearPhase = phase.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        System.out.println(isPolidromo(clearPhase)); 
 
-        boolean isPolidromo = isPolidromo(phaseClear);
-        System.out.println(isPolidromo);
+       
     }
 
     public static boolean isPolidromo(String phase) {
-
-        StringBuilder reversePhase = new StringBuilder(phase);
-        return phase.equals(reversePhase.reverse().toString());
-
+        StringBuilder stringBuilder = new StringBuilder(phase);
+        return stringBuilder.reverse().toString().equals(phase);
+       
     }
 
 }

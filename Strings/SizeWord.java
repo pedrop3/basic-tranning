@@ -1,6 +1,7 @@
 package Strings;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -20,9 +21,7 @@ public class SizeWord {
 
 
   public static String findBiggerWord(List<String> list) {
-    return list.stream()
-      .max(Comparator.comparingInt(String::length))
-      .orElse(null);
+    return Collections.max(list);
   }
 
   public static String findShortWord(List<String> list) {
