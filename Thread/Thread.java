@@ -1,4 +1,4 @@
-package Datas;
+package Thread;
 
 class Main extends Thread {
     public static void main(String[] args) {
