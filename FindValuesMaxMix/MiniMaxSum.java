@@ -1,3 +1,5 @@
+package FindValuesMaxMix;
+
 import static java.util.stream.Collectors.*;
 
 import java.io.BufferedReader;

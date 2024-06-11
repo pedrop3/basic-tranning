@@ -161,19 +161,19 @@ public class ClimbingTheLeaderboard {
 
         // int rankedCount = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> ranked = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+       // List<Integer> ranked = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+       //         .map(Integer::parseInt)
+       //         .collect(toList());
 
         // int playerCount = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> player = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+        //List<Integer> player = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+        //        .map(Integer::parseInt)
+        //        .collect(toList());
 
-        List<Integer> result = Result.climbingLeaderboard(ranked, player);
-        List<Integer> result2 = Result.climbingLeaderboardOptimized(ranked, player);
-        List<Integer> result3 = Result.climbingLeaderboardStream(ranked, player);
+      //  List<Integer> result = Result.climbingLeaderboard(ranked, player);
+      //  List<Integer> result2 = Result.climbingLeaderboardOptimized(ranked, player);
+      //  List<Integer> result3 = Result.climbingLeaderboardStream(ranked, player);
 
 
         bufferedReader.close();

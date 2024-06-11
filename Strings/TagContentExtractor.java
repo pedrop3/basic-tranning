@@ -102,7 +102,7 @@ public class TagContentExtractor {
                     continue;
                 }
 
-                builder.append(line.substring(i + 1, end));
+               // builder.append(line.substring(i + 1, end));
             }
         } else {
             if (!valid || !tags.isEmpty()) {
