@@ -1,0 +1,13 @@
+# Ignore the .idea directory
+.idea/
+
+# Ignore the basic-tranning.iml file within the .idea directory
+.idea/basic-tranning.iml
+
+# Ignore the out directory
+out/
+
+
+
+
+
