@@ -2,7 +2,6 @@ package HashMap;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
-import java.util.Map.Entry;
 
 //Crie um HashMap que armazene o nome e a nota de 5 alunos. Em seguida, imprima a nota média da turma, usando um Stream.
 public class AvarageClass {
@@ -17,9 +16,8 @@ public class AvarageClass {
         notas.put("Ana", 6.5);
         notas.put("Carlos", 5.5);
 
-        var avarageClass = notas.entrySet()
+        var avarageClass = notas.values()
                 .stream()
-                .map(Entry::getValue)
                 .mapToDouble(Double::doubleValue)
                 .average()
                 .getAsDouble();
