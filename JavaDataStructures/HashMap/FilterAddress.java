@@ -1,10 +1,10 @@
-package HashMap;
+package JavaDataStructures.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-//Crie um HashMap que armazene o nome e o endereço de 5 pessoas. Em seguida, imprima o endereço da pessoa com o nome "João", ordenado pelo número do endereço.
+//Crie um JavaDataStructures.HashMap que armazene o nome e o endereço de 5 pessoas. Em seguida, imprima o endereço da pessoa com o nome "João", ordenado pelo número do endereço.
 
 public class FilterAddress {
 

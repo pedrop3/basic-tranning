@@ -1,4 +1,4 @@
-package NodeTree;
+package JavaDataStructures.NodeTree;
 
 class Node {
   public int value;
