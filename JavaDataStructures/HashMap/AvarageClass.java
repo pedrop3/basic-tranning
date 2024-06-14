@@ -1,9 +1,9 @@
-package HashMap;
+package JavaDataStructures.HashMap;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
 
-//Crie um HashMap que armazene o nome e a nota de 5 alunos. Em seguida, imprima a nota média da turma, usando um Stream.
+//Crie um JavaDataStructures.HashMap que armazene o nome e a nota de 5 alunos. Em seguida, imprima a nota média da turma, usando um Stream.
 public class AvarageClass {
 
     public static void main(String[] args) {

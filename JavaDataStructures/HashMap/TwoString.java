@@ -1,4 +1,4 @@
-package HashMap;
+package JavaDataStructures.HashMap;
 
 public class TwoString {
     public static void main(String[] args) {

@@ -1,7 +1,6 @@
-package HashMap;
-//Crie um HashMap que armazene o nome e a idade de 5 pessoas. Em seguida, imprima o nome e a idade de cada pessoa, ordenados pelo nome.
+package JavaDataStructures.HashMap;
+//Crie um JavaDataStructures.HashMap que armazene o nome e a idade de 5 pessoas. Em seguida, imprima o nome e a idade de cada pessoa, ordenados pelo nome.
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
