@@ -9,7 +9,7 @@ public class LinkedList {
     private int length;
 
     //inner class
-    class Node {
+    static class Node {
         int value;
         Node next;
 
@@ -29,7 +29,7 @@ public class LinkedList {
         Node temp = head;
 
         while (temp != null) {
-            System.out.println(temp.value);
+            System.out.print(temp.value+" ");
             temp = temp.next;
         }
     }
@@ -47,6 +47,10 @@ public class LinkedList {
         System.out.println("Length" + length);
     }
 
+    /**
+     * Add element in LinkedList and returns void
+     *
+     */
     public void append(int value) {
         Node newNode = new Node(value);
 
@@ -65,7 +69,7 @@ public class LinkedList {
      * @return the last element from this list
      * @throws NoSuchElementException if this list is empty
      */
-    public Node removeLast() {
+    private Node removeLast() {
         if (length == 0) throw new NoSuchElementException();
 
         Node temp = head;
@@ -85,6 +89,21 @@ public class LinkedList {
         }
 
         return tail;
+    }
+
+    public Node remove(int index ) {
+        if(length < 0 || index >= length) return null;
+        if(length == 0) return  removeFirst();
+        if(length - 1 == index) return removeLast();
+
+        Node prev = get(index - 1);
+        Node temp = prev.next;
+
+        prev.next = temp.next;
+        temp.next = null;
+        length--;
+
+        return temp;
     }
 
     public void prepend(int value) {
@@ -168,10 +187,13 @@ class Main {
         linkedList.append(3);
 
 
-        linkedList.prepend(88);
+        linkedList.prepend(4);
 
-        linkedList.set(3,87);
+        linkedList.set(4,5);
+        linkedList.printList();
 
+        linkedList.remove(2);
+        System.out.println("\nAfter remove");
         linkedList.printList();
 
     }
