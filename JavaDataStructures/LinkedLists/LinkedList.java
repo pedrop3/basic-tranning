@@ -176,6 +176,22 @@ public class LinkedList {
         length++;
         return true;
     }
+
+    public void  reverse(){
+        Node temp = head;
+        head = tail;
+        tail = temp;
+
+        Node after = temp.next;
+        Node before = null;
+
+        for( int i = 0; i< length; i++) {
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
 }
 
 class Main {
@@ -195,6 +211,10 @@ class Main {
         linkedList.remove(2);
         System.out.println("\nAfter remove");
         linkedList.printList();
+
+        linkedList.reverse();
+        System.out.println("\nAfter reverse");
+        linkedList.printList(); 
 
     }
 }
