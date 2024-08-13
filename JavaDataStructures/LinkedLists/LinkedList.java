@@ -69,18 +69,20 @@ public class LinkedList {
      * @return the last element from this list
      * @throws NoSuchElementException if this list is empty
      */
-    private Node removeLast() {
+    public Node removeLast() {
         if (length == 0) throw new NoSuchElementException();
 
         Node temp = head;
         Node pre = head;
 
-        while (temp.next != null) {
+        while(temp.next != null) {
             pre = temp;
             temp = temp.next;
         }
+
         tail = pre;
-        tail.next = null;
+        pre.next = null;
+
         length--;
 
         if (length == 0) {
@@ -88,7 +90,7 @@ public class LinkedList {
             tail = null;
         }
 
-        return tail;
+        return temp;
     }
 
     public Node remove(int index ) {
@@ -199,22 +201,13 @@ class Main {
 
         LinkedList linkedList = new LinkedList(1);
 
-        linkedList.append(2);
-        linkedList.append(3);
-
-
-        linkedList.prepend(4);
-
-        linkedList.set(4,5);
         linkedList.printList();
 
-        linkedList.remove(2);
+        linkedList.removeLast();
         System.out.println("\nAfter remove");
         linkedList.printList();
 
-        linkedList.reverse();
-        System.out.println("\nAfter reverse");
-        linkedList.printList(); 
+
 
     }
 }
