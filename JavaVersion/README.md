@@ -6,6 +6,10 @@
 | **Java 17** (2021) | **Pattern Matching for instanceof**: Simplificação do casting com instanceof. <br> **Sealed Classes**: Controle de quais classes podem estender uma classe específica. <br> **Records**: Classe imutável com dados encapsulados e comportamento minimalista. <br> **Text Blocks**: Strings multilinha sem necessidade de concatenação ou escape. | **Foreign Function & Memory API (Incubating)**: Acesso eficiente a APIs nativas. <br> **Deprecações e Remoções**: Remoção de antigos Applets, várias APIs legadas descontinuadas. <br> **Enhanced Pseudo-Random Number Generators**: Melhoria em geradores de números aleatórios. | Suporte de Longo Prazo (LTS), atualmente recomendada para novas implementações. |
 | **Java 21** (2023) | **Pattern Matching for switch**: Simplificação de expressões `switch` com padrões. <br> **String Templates**: Interpolação de Strings com placeholders e expressões dinâmicas. <br> **Record Patterns**: Desestruturação de objetos `Record` em padrões `switch`. <br> **Sequenced Collections**: Interface unificada para List, Set, e Map com ordenação. | **Scoped Values**: Alternativa ao ThreadLocal, permitindo variáveis mutáveis por escopo. <br> **Virtual Threads (Preview)**: Threads leves para facilitar a programação assíncrona. <br> **Generational ZGC**: Nova versão do ZGC com suporte a gerações para melhor gerenciamento de memória. | Suporte regular, mas com muitas inovações que podem ser adotadas rapidamente. |
 
+JDK Project - https://openjdk.org/projects/jdk/
+
+Amber Project - https://openjdk.org/projects/amber/
+
 
 ## Java 8 (2014)
 
