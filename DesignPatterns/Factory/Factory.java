@@ -1,4 +1,4 @@
-package DesignPatterns;
+package DesignPatterns.Factory;
 
 // Interface que define o produto a ser criado
 interface Produto {

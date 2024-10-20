@@ -1,4 +1,4 @@
-package DesignPatterns;
+package DesignPatterns.AbstractFactory;
 
 // Animal é a interface para os produtos (animais) que serão criados.
 // Cachorro e Gato são classes concretas que implementam a interface Animal.
