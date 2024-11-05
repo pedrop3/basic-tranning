@@ -3,7 +3,7 @@ package Thread.ReentrantLock;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-class Counter {
+class ReentrantLockCounter {
     private int count = 0;
     private Lock lock = new ReentrantLock();
 
@@ -28,7 +28,7 @@ class Counter {
 
 public class ReentrantLockExample {
     public static void main(String[] args) {
-        Counter counter = new Counter();
+        ReentrantLockCounter counter = new ReentrantLockCounter();
 
         // Multiple threads incrementing the counter
         Runnable task = () -> {
