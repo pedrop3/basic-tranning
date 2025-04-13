@@ -37,7 +37,7 @@ public class Application {
             new ApproveCFO(),
             new ApproveCEO()
         );
-        Cost cost = new Cost(40000);
+        Cost cost = new Cost(1000);
 
         do {
             levelAprroveHandler.approveCost(cost);

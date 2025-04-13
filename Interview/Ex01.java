@@ -10,13 +10,12 @@ class Animal {
     public void setName(String name) {
         this.name = name;
     }
-
     public void generateReport() {
         System.out.println("Animal report: " + name);
     }
 
     public void walk() {
-        System.out.println(name + " is moving!");
+        System.out.println(name + " is moving!") ;
     }
 }
 
@@ -24,7 +23,7 @@ class Fish extends Animal {
 
     @Override
     public void walk() {
-        System.out.println("Fish is moving!");
+        System.out.println("Fish is moving!!!");
     }
 }
 
