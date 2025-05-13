@@ -46,7 +46,7 @@ public class ShortURL {
     }
 
     public static class UrlShortener {
-        private Map<String, String> urlMap; // Armazena pares de URL original e encurtada
+        private HashMap<String, String> urlMap; // Armazena pares de URL original e encurtada
         private String baseUrl; // A URL base para encurtar
 
         public UrlShortener(String baseUrl) {
